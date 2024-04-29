@@ -7,11 +7,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.container {
-  padding-left: 316px;
-  padding-right: 316px;
-}
-
 .top-header {
   display: flex;
   margin: 0;
@@ -34,25 +29,120 @@ body {
 }
 .left-side p {
   margin-left: 10px;
-  color: #e3e3e3;
+  color: gray;
 }
 
 .right-side {
   display: flex;
 }
 .right-side a {
-  color: #e3e3e3;
+  color: gray;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
 }
 .right-side i {
   color: #B78D65;
 }
 .right-side span {
+  margin-right: 5px;
   border: 1px solid #e3e3e3;
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header {
+  height: 85px;
+  background-color: white;
+  display: flex;
+  padding-left: 48px;
+  padding-right: 48px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .right-s {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .right-s h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+  color: #B78D65;
+}
+header .left-s {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .left-s .list-div ul {
+  display: flex;
+  gap: 40px;
+}
+header .left-s .list-div ul li {
+  cursor: pointer;
+  display: inline-block;
+}
+header .left-s .btn-div button {
+  height: 41px;
+  width: 149px;
+  background-color: #B78D65;
+  border: none;
+  color: white;
+  font-size: medium;
+  transition: 500ms;
+  cursor: pointer;
+}
+header .left-s .btn-div button:hover {
+  background-color: #C29E7C;
+}
+
+.container {
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://themewagon.github.io/arkitektur/img/carousel-1.jpg");
+  background-size: 100%;
+  padding-left: 124px;
+  padding-right: 124px;
+}
+.container div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 50px;
+}
+.container div h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  width: 1200px;
+}
+.container div p {
+  display: flex;
+  width: 800px;
+  color: white;
+  font-size: 20px;
+}
+.container div button {
+  width: 178px;
+  height: 57px;
+  background-color: #B78D65;
+  border: none;
+  color: white;
+  font-size: medium;
+  transition: 500ms;
+  cursor: pointer;
+}
+.container div button:hover {
+  background-color: #C29E7C;
 }
 
 /*# sourceMappingURL=main.css.map */
